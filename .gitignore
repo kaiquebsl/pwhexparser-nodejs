@@ -1,0 +1,33 @@
+# Node modules
+node_modules/
+
+# Build files
+dist/
+*.log
+npm-debug.log*
+*.tgz
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# PHP original (não incluir no repositório TypeScript)
+pwhexparser-main/
+
+# Temporary test files
+test.js
+*.test.js
+*.spec.js
+*.md
+# OS
+.DS_Store
+Thumbs.db
+
+
+
+# Lock files (opcional - alguns preferem commitar, outros não)
+# package-lock.json

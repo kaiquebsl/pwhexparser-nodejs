@@ -1,0 +1,33 @@
+{
+  "level": "Nível",
+  "class": "Classe",
+  "strength": "Força",
+  "vitality": "Vitalidade",
+  "dexterity": "Destreza",
+  "magic": "Magia",
+  "durability": {
+    "name": "Durabilidade",
+    "values": [
+      "min_durability",
+      "max_durability"
+    ],
+    "separator": "/"
+  },
+  "item_type": "Tipo de item",
+  "item_flag": "Flag do item",
+  "name_length": "name_length",
+  "name": "name",
+  "physical_attack": "Ataque físico",
+  "magic_attack": "Ataque mágico",
+  "physical_defense": "Defesa física",
+  "dodge": "Esquiva",
+  "metal_resistance": "Resistência Metal",
+  "wood_resistance": "Resistência Madeira",
+  "water_resistance": "Resistência Água",
+  "fire_resistance": "Resistência Fogo",
+  "earth_resistance": "Resistência Terra",
+  "sockets_count": "sockets_count",
+  "sockets": "sockets",
+  "addons_count": "addons_count",
+  "addons": "addons"
+}

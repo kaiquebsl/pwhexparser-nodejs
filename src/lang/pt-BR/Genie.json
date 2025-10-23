@@ -1,0 +1,20 @@
+{
+  "current_exp": "Experiência atual",
+  "level": "Nível",
+  "available_points": "Pontos disponíveis",
+  "strength": "Força",
+  "agility": "Agilidade",
+  "constitution": "Constituição",
+  "intelligence": "Inteligência",
+  "talent_points": "Pontos de talento",
+  "metal": "Metal",
+  "wood": "Madeira",
+  "water": "Água",
+  "fire": "Fogo",
+  "earth": "Terra",
+  "refine_level": "Nível de refinamento",
+  "vigour": "Vigor",
+  "status_value": "Valor de status",
+  "equipments_count": "Contagem de equipamentos",
+  "skills_count": "skills_count"
+}

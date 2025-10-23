@@ -1,0 +1,39 @@
+# Source files (apenas dist/ será publicado)
+src/
+tsconfig.json
+
+# Node modules
+node_modules/
+
+# Tests
+test.js
+*.test.js
+*.spec.js
+
+# Build files
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# PHP original
+pwhexparser-main/
+
+# Examples and tests (não incluir)
+examples/
+test/
+tests/
+
+# OS
+.DS_Store
+Thumbs.db
+

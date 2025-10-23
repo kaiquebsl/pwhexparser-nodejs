@@ -1,0 +1,10 @@
+{
+  "type": "Tipo",
+  "class": "Classe",
+  "level": "Nível",
+  "leadership": "Liderança",
+  "max_level": "Nível máximo",
+  "current_level": "Nível atual",
+  "current_exp": "Experiência atual",
+  "merge_times": "Vezes de fusão"
+}

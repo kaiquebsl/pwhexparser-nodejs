@@ -1,0 +1,61 @@
+{
+  "name": "pwhexparser",
+  "version": "1.0.0",
+  "description": "TypeScript library for decoding PW's hexadecimal strings based on their predefined structure",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src/lang",
+    "README.md",
+    "LICENSE",
+    "VALIDATION.md"
+  ],
+  "scripts": {
+    "build": "tsc && npm run copy-lang",
+    "copy-lang": "xcopy /E /I /Y src\\lang dist\\lang",
+    "dev": "tsc --watch",
+    "clean": "if exist dist rmdir /s /q dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "pw",
+    "perfect-world",
+    "hex",
+    "parser",
+    "decoder",
+    "game",
+    "items",
+    "typescript",
+    "hexadecimal",
+    "pwi"
+  ],
+  "author": {
+    "name": "kaiquebsl",
+    "url": "https://github.com/kaiquebsl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaiquebsl/pwhexparser-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kaiquebsl/pwhexparser-nodejs/issues"
+  },
+  "homepage": "https://github.com/kaiquebsl/pwhexparser-nodejs#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

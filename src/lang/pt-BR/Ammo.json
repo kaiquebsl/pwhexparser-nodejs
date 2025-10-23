@@ -1,0 +1,25 @@
+{
+  "level": "Nv. necessário",
+  "required_class": "Classe necessária",
+  "strength_requirement": "Força necessária",
+  "constitution_requirement": "Constituição necessária",
+  "agility_requirement": "Agilidade necessária",
+  "intelligence_requirement": "Inteligência necessária",
+  "durability": {
+    "name": "Durabilidade",
+    "values": [
+      "min_durability",
+      "max_durability"
+    ],
+    "separator": "/"
+  },
+  "type": "Tipo",
+  "damage": "Dano",
+  "damage_scale": "Escala de dano",
+  "min_weapon_grade": "Grau mínimo da arma",
+  "max_weapon_grade": "Grau máximo da arma",
+  "sockets_count": "sockets_count",
+  "sockets": "sockets",
+  "addons_count": "addons_count",
+  "addons": "addons"
+}
