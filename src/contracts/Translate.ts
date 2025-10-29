@@ -22,10 +22,29 @@ export abstract class Translate implements Item {
     this.langFilePath = join(__dirname, '../lang', this.lang, this.getClassFileName() + '.json');
 
     try {
-      // Check if file exists by trying to read it
+      // Check if requested language file exists
       readFileSync(this.langFilePath, 'utf8');
     } catch (error) {
-      throw new Error(`Language: ${this.lang} not available yet at path: "${this.langFilePath}"`);
+      // Fallback to default language when requested one is not available
+      const requestedPath = this.langFilePath;
+      const fallbackLang = 'pt-BR';
+      const fallbackPath = join(
+        __dirname,
+        '../lang',
+        fallbackLang,
+        this.getClassFileName() + '.json'
+      );
+
+      try {
+        readFileSync(fallbackPath, 'utf8');
+        this.lang = fallbackLang;
+        this.langFilePath = fallbackPath;
+      } catch (fallbackError) {
+        // If even fallback is missing, surface a clear error
+        throw new Error(
+          `Language not available. Tried: ${lang} at "${requestedPath}" and fallback ${fallbackLang} at "${fallbackPath}"`
+        );
+      }
     }
   }
 
@@ -66,7 +85,7 @@ export abstract class Translate implements Item {
    * Get the minimum hex string length required for this item type
    * @returns Minimum length in characters
    */
-  public getMinimumLength(): number {
+public getMinimumLength(): number {
     return 0;
   }
 }
