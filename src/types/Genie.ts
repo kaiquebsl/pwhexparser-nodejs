@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Genie extends Translate {
+  public readonly typeKey: string = 'Genie';
   public getStructure(): Record<string, string> {
     return {
       'current_exp': 'int64',

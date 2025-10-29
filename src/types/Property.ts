@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Property extends Translate {
+  public readonly typeKey: string = 'Property';
   public getStructure(): Record<string, string> {
     return {
       'vitality': 'int64',

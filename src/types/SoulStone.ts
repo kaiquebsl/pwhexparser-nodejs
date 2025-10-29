@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class SoulStone extends Translate {
+  public readonly typeKey: string = 'SoulStone';
   public getStructure(): Record<string, string> {
     return {
       'w_addons_count': 'addons_count',

@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class PetFood extends Translate {
+  public readonly typeKey: string = 'PetFood';
   public getStructure(): Record<string, string> {
     return {
       'honor': 'int64',

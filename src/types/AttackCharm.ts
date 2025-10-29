@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class AttackCharm extends Translate {
+  public readonly typeKey: string = 'AttackCharm';
   public getStructure(): Record<string, string> {
     return {
       'rune_type': 'int32',

@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Potion extends Translate {
+  public readonly typeKey: string = 'Potion';
   public getStructure(): Record<string, string> {
     return {
       'amount': 'int64',

@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Pet extends Translate {
+  public readonly typeKey: string = 'Pet';
   public getStructure(): Record<string, string> {
     return {
       'level': 'int64',

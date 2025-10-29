@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Flight extends Translate {
+  public readonly typeKey: string = 'Flight';
   public getStructure(): Record<string, string> {
     return {
       'fuel1': 'int64',

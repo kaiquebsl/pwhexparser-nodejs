@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Bible extends Translate {
+  public readonly typeKey: string = 'Bible';
   public getStructure(): Record<string, string> {
     return {};
   }

@@ -70,6 +70,10 @@ export abstract class Translate implements Item {
    * @returns Class name as string
    */
   public getClassFileName(): string {
+    const self: any = this as any;
+    if (typeof self.typeKey === 'string' && self.typeKey.length > 0) {
+      return self.typeKey;
+    }
     return this.constructor.name;
   }
 

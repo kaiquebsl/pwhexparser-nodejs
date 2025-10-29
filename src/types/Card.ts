@@ -1,6 +1,7 @@
 import { Translate } from '../contracts/Translate.js';
 
 export class Card extends Translate {
+  public readonly typeKey: string = 'Card';
   public getStructure(): Record<string, string> {
     return {
       'type': 'int64',
